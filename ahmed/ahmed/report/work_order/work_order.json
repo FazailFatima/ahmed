@@ -1,0 +1,29 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2024-05-07 19:39:00.765331",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2024-05-07 19:57:19.179869",
+ "modified_by": "Administrator",
+ "module": "Ahmed",
+ "name": "Work Order",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Work Order",
+ "report_name": "Work Order",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "Manufacturing User"
+  },
+  {
+   "role": "Stock User"
+  }
+ ]
+}
