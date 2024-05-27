@@ -8,7 +8,9 @@
  "engine": "InnoDB",
  "field_order": [
   "name1",
-  "first_name"
+  "first_name",
+  "status",
+  "amended_from"
  ],
  "fields": [
   {
@@ -21,11 +23,28 @@
    "fieldname": "first_name",
    "fieldtype": "Data",
    "label": "First Name"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Approved\nRejected\nPending\nPassed"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Ahmed",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2024-04-24 21:55:49.807384",
+ "modified": "2024-05-23 18:03:08.302187",
  "modified_by": "Administrator",
  "module": "Ahmed",
  "name": "Ahmed",
