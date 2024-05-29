@@ -22,7 +22,7 @@ frappe.query_reports["Data Of Employee"] = {
 	],
     get_datatable_options(options) {
 		return Object.assign(options, {
-			cellHeight: 33
+			cellHeight: 103
 		});
 	},
 };

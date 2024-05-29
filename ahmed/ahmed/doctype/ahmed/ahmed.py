@@ -3,6 +3,8 @@
 
 # import frappe
 from frappe.model.document import Document
+from ahmed.integration.api import dummy_api
 
 class Ahmed(Document):
-	pass
+	def validate(self):
+		dummy_api()

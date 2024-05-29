@@ -65,18 +65,62 @@ def get_data(filters):
 		})
 
 	return data
+# def get_chart(data):
+#     return {
+#         "data": {
+#             "labels": ["Jan", "Feb", "Mar", "Apr"],
+#             "datasets": [{
+#                 "name": "Revenue",
+#                 "values": [10, 20, 30, 40]
+#             }]
+#         },
+#         "type": "percentage",
+#         "title": "Monthly Revenue",
+#         "height": 500,
+#         "animate": True,
+#         "axisOptions": {
+#             "xAxis": {
+#                 "title": "Months",
+#                 "gridLines": {
+#                     "display": True,
+#                     "color": "#e0e0e0"
+#                 },
+#                 "labels": {
+#                     "display": True,
+#                     "rotation": 45
+#                 }
+#             },
+#             "yAxis": {
+#                 "title": "Revenue (in thousands)",
+#                 "gridLines": {
+#                     "display": True,
+#                     "color": "#e0e0e0"
+#                 },
+#                 "scale": "linear",
+#                 "ticks": {
+#                     "beginAtZero": True
+#                 }
+#             }
+#         }
+#     }
+
 def get_chart(data):
-	
-	return {
-		"data": {
-			"labels":["red","blue","green"],
-			"datasets": [{
-				"values": [0.5,0.7,0.099]
-			}]
-		},
-		"type": "pie",  # You can change this to 'line', 'pie', etc.
-		
-	}
+    return {
+        "data": {
+            "labels": ["hello", "khan", "jhan"],
+            "datasets": [{
+                "name": "Salary",
+                "values": [2.2, 4, 4.43, 4.432]
+            }]
+        },
+        "type": "pie",
+        "title": "This is A Practice Chart",
+        "height": 500,
+        "animate": True,
+        "truncateLegends": True# Enable animation
+    }
+
+
 # def get_chart(data):
 # 	labels = [d['employee'] for d in data]
 # 	salaries = [d['employee_name'] for d in data]
