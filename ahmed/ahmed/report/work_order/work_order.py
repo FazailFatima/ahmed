@@ -139,4 +139,3 @@ def get_chart(data):
 # 			"stacked": True
 # 		}
 # 	}
-

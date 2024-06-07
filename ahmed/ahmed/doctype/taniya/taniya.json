@@ -1,7 +1,7 @@
 {
  "actions": [],
  "autoname": "autoincrement",
- "creation": "2024-04-17 17:02:05.302004",
+ "creation": "2024-06-04 10:01:19.867260",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -10,6 +10,7 @@
   "name1",
   "first_name",
   "status",
+  "child_field",
   "amended_from"
  ],
  "fields": [
@@ -31,11 +32,17 @@
    "options": "Approved\nRejected\nPending\nPassed"
   },
   {
+   "fieldname": "child_field",
+   "fieldtype": "Table",
+   "label": "Child Field",
+   "options": "Child"
+  },
+  {
    "fieldname": "amended_from",
    "fieldtype": "Link",
    "label": "Amended From",
    "no_copy": 1,
-   "options": "Ahmed",
+   "options": "Taniya",
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
@@ -44,10 +51,10 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-05-23 18:03:08.302187",
+ "modified": "2024-06-04 10:01:19.867260",
  "modified_by": "Administrator",
  "module": "Ahmed",
- "name": "Ahmed",
+ "name": "Taniya",
  "naming_rule": "Autoincrement",
  "owner": "Administrator",
  "permissions": [

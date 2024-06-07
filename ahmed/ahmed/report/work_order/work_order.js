@@ -28,7 +28,7 @@ frappe.query_reports["Work Order"] = {
 		},
 		get_datatable_options(options) {
 			return Object.assign(options, {
-				cellHeight: 50
+				cellHeight: 80
 			});
 		},
 		// formatter: function (value, row, column, data, default_formatter) {
