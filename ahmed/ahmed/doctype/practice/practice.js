@@ -33,18 +33,5 @@ frappe.ui.form.on('Practice', {
 
 
 		})
-		$(document).keydown(function (e) {
-			if (e.ctrlKey && e.keyCode == 13) { // Ctrl+Enter key
-				// Check if the currently focused element is within the form
-				if (document.activeElement && $(document.activeElement).closest('.frappe-control').length) {
-					// Add a new row to the child table
-					var child = frm.add_child('practice_child');
-					frm.refresh_field('practice_child');
-					// Optionally, focus on the first field of the new row
-					frappe.utils.scroll_to(child.wrapper);
-					frm.fields_dict['practice_child'].grid.grid_rows[frm.fields_dict['practice_child'].grid.grid_rows.length - 1].toggle_view(true);
-				}
-			}
-		});
 	},
 });
