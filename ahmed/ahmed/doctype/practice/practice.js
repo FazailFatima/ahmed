@@ -6,11 +6,11 @@ frappe.ui.form.on('Practice', {
 		frm.add_custom_button('Open Route form', () => {
 			frappe.set_route('country',);
 		})
-		// frm.add_custom_button('Open url form', () => {
-		// 	frappe.get_url("/app/doctype/Taniya")
-
-		// })
-
+		frm.add_custom_button('Open url form', () => {
+			frappe.get_url("/app/doctype/Taniya")
+// 
+		})
+// 
 		// frm.add_custom_button('frm call', () => {
 		// 	frm.call('send_data')
 

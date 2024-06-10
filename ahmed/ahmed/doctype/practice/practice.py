@@ -23,7 +23,7 @@ class Practice(Document):
         delayed= False,
         retry=3,
     )
-	# frappe.msgprint("send the mail successfuly")
+	frappe.msgprint("send the mail successfuly")
 		# val=frappe.msgprint("send the mail successfuly")
 		# return val
 	 
