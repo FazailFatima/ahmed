@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestTaniya(FrappeTestCase):
+class TestReportPrintView(FrappeTestCase):
 	pass

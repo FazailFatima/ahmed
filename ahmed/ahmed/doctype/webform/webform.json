@@ -9,6 +9,8 @@
  "field_order": [
   "name1",
   "first_name",
+  "last_name",
+  "webform",
   "status",
   "child_field",
   "amended_from"
@@ -42,19 +44,29 @@
    "fieldtype": "Link",
    "label": "Amended From",
    "no_copy": 1,
-   "options": "Taniya",
+   "options": "Webform",
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "webform",
+   "fieldtype": "Data",
+   "label": "Webform"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-06-04 10:01:19.867260",
+ "modified": "2024-07-23 12:18:50.969457",
  "modified_by": "Administrator",
  "module": "Ahmed",
- "name": "Taniya",
+ "name": "webform",
  "naming_rule": "Autoincrement",
  "owner": "Administrator",
  "permissions": [

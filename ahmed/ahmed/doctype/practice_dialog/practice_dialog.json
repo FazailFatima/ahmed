@@ -1,34 +1,33 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2024-06-03 14:25:04.962022",
+ "creation": "2024-07-02 10:50:13.465486",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "name1",
-  "practice_child"
+  "class"
  ],
  "fields": [
   {
    "fieldname": "name1",
    "fieldtype": "Data",
-   "label": "name"
+   "label": "Name"
   },
   {
-   "fieldname": "practice_child",
+   "fieldname": "class",
    "fieldtype": "Data",
-   "label": "Practice Child",
-   "options": "Child"
+   "label": "Class"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-22 12:50:17.481601",
+ "modified": "2024-07-02 10:50:13.465486",
  "modified_by": "Administrator",
  "module": "Ahmed",
- "name": "Practice",
+ "name": "Practice Dialog",
  "owner": "Administrator",
  "permissions": [
   {

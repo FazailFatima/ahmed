@@ -1,34 +1,48 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2024-06-03 14:25:04.962022",
+ "autoname": "field:task",
+ "creation": "2024-07-22 12:53:21.778678",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "name1",
-  "practice_child"
+  "task",
+  "amount_1",
+  "amount_2",
+  "amount_3"
  ],
  "fields": [
   {
-   "fieldname": "name1",
+   "fieldname": "task",
    "fieldtype": "Data",
-   "label": "name"
+   "label": "Task",
+   "unique": 1
   },
   {
-   "fieldname": "practice_child",
+   "fieldname": "amount_1",
    "fieldtype": "Data",
-   "label": "Practice Child",
-   "options": "Child"
+   "label": "Amount 1"
+  },
+  {
+   "fieldname": "amount_2",
+   "fieldtype": "Data",
+   "label": "Amount 2"
+  },
+  {
+   "fieldname": "amount_3",
+   "fieldtype": "Data",
+   "label": "Amount 3"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-22 12:50:17.481601",
+ "modified": "2024-07-22 12:55:17.195409",
  "modified_by": "Administrator",
  "module": "Ahmed",
- "name": "Practice",
+ "name": "Report Print View",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

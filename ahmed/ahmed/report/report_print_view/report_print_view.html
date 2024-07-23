@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .left {
+            float: left;
+            width: 50%;
+			height: 200px;
+			background:red;
+        }
+        .right {
+            float: right;
+            width: 50%;
+			height: 200px!;
+			background: #000;
+        }
+        .image-style {
+            height: 104px;
+            width: 140px;
+        }
+        .head {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <!-- title -->
+    {% if title %}
+    <h2>{{ __(title) }}</h2>
+    {% endif %}
+    
+    <img src="/files/BISINT_LOGO.jpg" alt="BSI LOGO" class="image-style">
+    <hr style="border: 3px solid black;">
+    
+    {% if subtitle %}
+    {{ subtitle }}
+    <div class="head">
+        <div class="left">
+            <h3>padding-left</h3>
+        </div>
+        <div class="right">
+            <h3>padding_right</h3>
+        </div>
+    </div>
+    {% endif %}
+    
+    <table class="table table-bordered">
+        <!-- heading -->
+        <thead>
+            <tr>
+                <th>#</th>
+                {% for col in columns %}
+                    {% if col.name && col._id !== "_check" %}
+                        <th
+                            {% if col.minWidth %}
+                                style="min-width: {{ col.minWidth }}px"
+                            {% endif %}
+                            {% if col.docfield && frappe.model.is_numeric_field(col.docfield) %}
+                                class="text-right"
+                            {% endif %}
+                        >
+                            {{ __(col.name) }}
+                        </th>
+                    {% endif %}
+                {% endfor %}
+            </tr>
+        </thead>
+        <!-- body -->
+        <tbody>
+            

@@ -1,0 +1,23 @@
+.web-form-header {
+    margin-bottom: 2rem;
+    border: 8px solid var(--blue-200) !important;
+    border-radius: var(--border-radius);
+    background-color: var(--blue-50) !important;
+}
+
+.web-form-head {
+    border: none !important;
+    padding-bottom: 2rem !important;
+}
+
+.web-form {
+    border: 44px solid var(--dark-border-color) !important;
+    border-radius: var(--border-radius);
+    padding-top: 2rem !important;
+}
+.web-form-title ellipsis{
+    color: red;
+}
+.web-form-header ellipsis{
+    color: red;
+}

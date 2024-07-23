@@ -9,11 +9,11 @@ app_license = "MIT"
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/ahmed/css/ahmed.css"
-app_include_js = "/assets/ahmed/js/auto_add_row.js"
+# app_include_css = "/ahmed/public/css/webform.scss"
+# app_include_js = "/public/css/webform.scss"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/ahmed/css/ahmed.css"
+# web_include_css = "/ahmed/public/css/webform.scss"
 # web_include_js = "/assets/ahmed/js/ahmed.js"
 
 # include custom scss in every website theme (without file extension ".scss")

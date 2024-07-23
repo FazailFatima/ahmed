@@ -87,8 +87,6 @@ frappe.query_reports["Bank Advice Report"] = {
 			label: "Status",
     		fieldname: "status",
 			fieldtype: "Select",
-			// options : "Draft\nSubmitted\nCancelled",
-			// default: "Submitted"
 		},
 	]
 
