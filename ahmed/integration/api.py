@@ -1,25 +1,41 @@
+import requests
 import frappe
 
-import requests
+def dummy_api(self, method=None):
+    base_url = "https://dummy.restapiexample.com"
+    url = base_url + "/api/v1/employees"
+    headers = {
+        "Content-Type": "application/json"
+    }
 
-def dummy_api():
-    # base_url = "https://dummy.restapiexample.com"
-    # url = base_url + "/api/v1/employees"
-    # headers = {
-    #     "Content-Type": "application/json",
-    #     "Accept": "application/json" 
-    # }
-
-    # res = requests.get(url, headers=headers)
-    # res.raise_for_status()
+    try:
+        res = requests.get(url, headers=headers)
+        res.raise_for_status()
+        
+        # Parse the JSON response data
+        response_data = res.json()
+        
+        # Print the response data using frappe.msgprint
+        frappe.msgprint(f"Response Data: {response_data}")
+        
+        return response_data
     
-    # # Parse the JSON response data
-    # response_data = res.json()
+    except requests.exceptions.HTTPError as errh:
+        frappe.log_error(message=str(errh), title="HTTP Error")
+        return {"error": "HTTP Error occurred"}
     
-    # return response_data
-    pass
+    except requests.exceptions.ConnectionError as errc:
+        frappe.log_error(message=str(errc), title="Connection Error")
+        return {"error": "Connection Error occurred"}
+    
+    except requests.exceptions.Timeout as errt:
+        frappe.log_error(message=str(errt), title="Timeout Error")
+        return {"error": "Timeout Error occurred"}
+    
+    except requests.exceptions.RequestException as err:
+        frappe.log_error(message=str(err), title="Request Error")
+        return {"error": "An Error occurred"}
 
-
-
-
-
+# Example usage (assuming this function is hooked properly in your Frappe app)
+# result = dummy_api(None)
+# print(result)

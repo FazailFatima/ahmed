@@ -116,11 +116,16 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"Ahmed": {
-# 		"validate": "ahmed.integration.api.dummy_api",
-# 	}
-# }
+doc_events = {
+	"Api Practice": {
+		"validate": "ahmed.integration.api.dummy_api",
+	}
+
+    # "Api Practice": {
+		# "validate": "ahmed.api.takealot.takealot_sales_data",
+        # "validate": "ahmed.api.woocommerce.get_woocommerce_order_data",
+    # }
+}
 
 # Scheduled Tasks
 # ---------------
