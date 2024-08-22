@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-22 11:17:45.298549",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "label_1",
+  "label_2",
+  "label3",
+  "column_break_egyhr",
+  "label_4",
+  "label_5"
+ ],
+ "fields": [
+  {
+   "fieldname": "label_1",
+   "fieldtype": "Data",
+   "label": "Label 1"
+  },
+  {
+   "fieldname": "label_2",
+   "fieldtype": "Data",
+   "label": "Label 2"
+  },
+  {
+   "fieldname": "label3",
+   "fieldtype": "Data",
+   "label": "Label3"
+  },
+  {
+   "fieldname": "label_4",
+   "fieldtype": "Data",
+   "label": "Label 4"
+  },
+  {
+   "fieldname": "label_5",
+   "fieldtype": "Data",
+   "label": "LAbel 5"
+  },
+  {
+   "fieldname": "column_break_egyhr",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-22 11:19:09.995008",
+ "modified_by": "Administrator",
+ "module": "Ahmed",
+ "name": "Utility Functions",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
