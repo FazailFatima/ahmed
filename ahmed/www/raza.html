@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is a brief description of the page.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Frappe, Web Development">
+    <meta name="author" content="Your Name">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<head>
+    <title>{{ title }}</title>
+    <style>
+        /* Inline CSS styles */
+        .container{display:flex;}.sidebar{width:250px;background-color:#af5252;padding:15px;border-right:1px solid #ddd;}.sidebar h2{font-size:18px;}.sidebar ul{list-style-type:none;padding:0;}.sidebar ul li{margin:10px 0;}.sidebar ul li a{text-decoration:none;color:#333;}.content{flex:1;padding:15px;}header{padding:10px;background-color:#f8f9fa;border-bottom:1px solid #ddd;}.pagination{margin-top:20px;}
+
+    </style>
+</head>
+<body>
+    {% if not no_header %}
+    <header>
+        <h1>{{ title }}</h1>
+        <!-- Header content here -->
+    </header>
+    {% endif %}
+
+    <div class="container">
+        {% if show_sidebar %}
+        <div class="sidebar">
+            <h2>Sidebar</h2>
+            <ul>
+                <li><a href="/hello.html">First Page</a></li>
+                <li><a href="/breadcrum.html">Second Page</a></li>
+                <li><a href="/raza.html">Third Page</a></li>
+            </ul>
+        </div>
+        {% endif %}
+
+        <div class="content">
+            <!-- Page content here -->
+            <h1>{{ title }}</h1>
+            <p>Welcome to the page!</p>
+        </div>
+    </div>
+
+    {% if add_next_prev_links %}
+    <nav class="pagination">
+        <!-- Next and Previous navigation buttons -->
+        <a href="/page/previous_page">Previous</a>
+        <a href="/page/next_page">Next</a>
+    </nav>
+    {% endif %}
+
+    <script>
+        // Inline JavaScript
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // JavaScript to enhance sidebar functionality or other features
+            console.log("Page loaded and ready.");
+        });
+    </script>
+</body>
+</html>

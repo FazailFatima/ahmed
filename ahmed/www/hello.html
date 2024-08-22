@@ -1,5 +1,21 @@
-{% extends "templates/web.html" %} {% block title %}{{ _("About Us") }}{%
-endblock %} {% block page_content %}
+{% extends "templates/web.html" %}
+{% block title %}{{ _("About Us") }}{%endblock %} 
+{% block page_content %}
+<div class="container">
+  <!-- Breadcrumbs -->
+  <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/">{{ _("Home") }}</a></li>
+          <li class="breadcrumb-item"><a href="/breadcrum.html">{{ _("Breadcrum") }}</a></li>
+          <li class="breadcrumb-item active" aria-current="page">{{ _("About Us") }}</li>
+      </ol>
+  </nav>
+  
+  <!-- Page Content
+  <h1>{{ _("Hello, World!") }}</h1>
+  <p>{{ _("Welcome to the Hello page.") }}</p> -->
+</div>
+
 <h1 style="color: red;">{{ _("About Us") }}</h1>
 <div class="row">
   <div class="col-sm-6">
@@ -9,10 +25,17 @@ endblock %} {% block page_content %}
       imbibes these values.
     </p>
     <img src="/files/BISINT_LOGO.jpg" alt=" This is logo just For Practice" width="200px" height="200px">
+    <!-- {% for my in practice %}
+    <h1>{{practice }}</h1>
+  {% endfor %} -->
+  {% if about_us_settings.show_contact_us %}
+  <a class="btn btn-primary" href="/contact">Contact Us</a>
+  {% endif %}
 
   </div>
 
 </div>
 {% if about_us_settings.show_contact_us %}
 <a class="btn btn-primary" href="/contact">Contact Us</a>
-{% endif %} {% endblock %}
+{% endif %}
+ {% endblock %}

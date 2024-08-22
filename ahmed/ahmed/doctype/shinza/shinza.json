@@ -19,14 +19,13 @@
   },
   {
    "fieldname": "table_name",
-   "fieldtype": "Table",
-   "label": "Table Name",
-   "options": "Child 1"
+   "fieldtype": "Data",
+   "label": "Table Name"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-05 13:03:42.514336",
+ "modified": "2024-08-17 16:39:44.793808",
  "modified_by": "Administrator",
  "module": "Ahmed",
  "name": "Shinza",

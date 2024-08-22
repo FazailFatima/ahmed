@@ -1,0 +1,22 @@
+{% extends "templates/web.html" %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block page_content %}
+    <div class="container">
+        <!-- Breadcrumbs -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">{{ _("Home") }}</a></li>
+                <li class="breadcrumb-item"><a href="/hello.html">{{ _("About Us") }}</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{{ _("Hello") }}</li>
+            </ol>
+        </nav>
+        
+        Page Content
+        <h1>{{ _("Bread Crumb") }}</h1>
+        <p>{{ _("Welcome to the Bread Crumb Page.") }}</p>
+    </div>
+{% endblock %}
